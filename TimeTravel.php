@@ -27,7 +27,7 @@ class TimeTravel
     public function getTravelInfo()
     {
         $info = $this->start->diff($this->end);
-        return $info->format("Il y a %y années, %m mois, %d jours, %h heures, %i minutes et %s secondes entre les deux dates.");
+        return $info->format("<span class='text-danger'> Il y a %y années, %m mois, %d jours, %h heures, %i minutes et %s secondes entre les deux dates.</span>");
     }
 
     public function backToFutureStepByStep(DatePeriod $step)
